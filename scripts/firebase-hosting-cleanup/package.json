@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "clean": "rm -rf node_modules",
+    "reset": "yarn clean && yarn install"
+  },
+  "dependencies": {
+    "firebase-tools": "^6.1.1"
+  },
+  "engines": {
+    "node": ">= 6.0.0"
+  }
+}

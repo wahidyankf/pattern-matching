@@ -1,0 +1,30 @@
+{
+  "name": "ayokoding",
+  "version": "0.1.0",
+  "description": "repo for ayokoding.com",
+  "main": "index.js",
+  "scripts": {
+    "init:package": "yarn install",
+    "clean:package": "rm -rf node_modules",
+    "reset:package": "yarn clean:package && yarn install",
+    "firebase:clean": "cd ../../scripts/firebase-hosting-cleanup && node cleanupVersions.js ayokoding-f36a3 5 commit",
+    "dev": "vuepress dev content",
+    "build": "vuepress build content",
+    "deploy": "yarn build && firebase deploy && yarn firebase:clean"
+  },
+  "author": "wahidyankf <wahidyankf@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.0.0-alpha.0",
+    "@vuepress/plugin-medium-zoom": "^1.0.0-alpha.0",
+    "@vuepress/plugin-notification": "^1.0.0-alpha.5",
+    "@vuepress/plugin-pwa": "^1.0.0-alpha.0",
+    "vue-tabs-component": "^1.5.0",
+    "vuepress": "^1.0.0-alpha.17",
+    "vuepress-plugin-flowchart": "^1.4.2",
+    "vuepress-plugin-tabs": "^0.2.0"
+  },
+  "dependencies": {
+    "firebase-tools": "^6.1.1"
+  }
+}

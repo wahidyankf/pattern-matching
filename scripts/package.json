@@ -1,0 +1,19 @@
+{
+  "name": "scripts",
+  "version": "0.0.1",
+  "description": "scripts for ayokoding",
+  "main": "index.js",
+  "scripts": {
+    "init:firebasehostingcleanup": "cd scripts/firebase-hosting-cleanup && yarn install",
+    "clean:firebasehostingcleanup": "cd scripts/firebase-hosting-cleanup && yarn clean",
+    "reset:firebasehostingcleanup": "yarn clean:firebasehostingcleanup && yarn init:firebasehostingcleanup",
+    "init:top": "yarn install",
+    "clean:top": "rm -rf node_modules",
+    "reset:top": "yarn clean:top && yarn init:top",
+    "init:scripts": "yarn init:top && yarn init:firebasehostingcleanup",
+    "clean:scripts": "yarn clean:top && yarn clean:firebasehostingcleanup",
+    "reset:scripts": "yarn clean:scripts && yarn init:scripts"
+  },
+  "author": "wahidyankf",
+  "license": "ISC"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "codes-js",
+  "version": "0.0.1",
+  "description": "js-source code for ayokoding",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "clean": "rm -rf node_modules",
+    "reset": "yarn clean && yarn install"
+  },
+  "author": "wahidyankf",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
