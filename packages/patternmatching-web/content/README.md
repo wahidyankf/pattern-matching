@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /icons/android-icon-96x96.png
-footer: Copyright © 2019-now PatternMatching.rocks
+footer: "License: MIT"
 ---
 
 <div class="features">
