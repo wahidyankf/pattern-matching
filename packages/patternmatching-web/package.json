@@ -11,7 +11,7 @@
     "build": "yarn build:vuepress",
     "deploy": "yarn build && firebase deploy && yarn firebase:clean",
     "develop": "vuepress dev content",
-    "firebase:clean": "cd ../../scripts/firebase-hosting-cleanup && node cleanupVersions.js ayokoding-f36a3 5 commit"
+    "firebase:clean": "cd ../../scripts/firebase-hosting-cleanup && node cleanupVersions.js patternmatch-92eee 5 commit"
   },
   "author": "wahidyankf <wahidyankf@gmail.com>",
   "license": "ISC",
