@@ -51,7 +51,10 @@ module.exports = {
             buttonText: 'refresh',
           },
         },
-        nav: [{text: 'OCaml', link: '/en/ocaml/'}],
+        nav: [
+          {text: 'OCaml', link: '/en/ocaml/'},
+          {text: 'ReasonML', link: '/en/reasonml/'},
+        ],
         sidebar: {
           '/en/ocaml/': [
             ['/en/ocaml/01-introduction/', '01 - Introduction'],
