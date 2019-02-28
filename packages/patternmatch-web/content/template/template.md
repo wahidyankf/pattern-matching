@@ -77,3 +77,17 @@ Klik salah satu nama bahasa pemrograman di atas untuk melihat solusi.
 :::
 
 ::::
+
+::: tip
+
+1. Baca soalnya ~~sambil nyemil gorengan juga boleh~~.
+2. Coba ngertiin apa yang soalnya mau.
+3. Pikirin solusinya
+4. Ketemu jawabannya? Mantab! Skip ke nomer 6.
+5. Gak ketemu jawabannya? Tenang, tenang, istirahat dulu aja ~~sambil makan cakwe~~ dan balik ke nomer 3. Udah mentok? Lanjut ke nomer 6.
+6. Bandingin sama solusi yang udah dikasih.
+7. Sama? Mantab!
+8. Gak sama tapi bener? Gokil! Lo bisa nemu hal yang berbeda dengan yang ada di sini!
+9. Lanjut ke soal lainnya setelah istirahat.
+
+:::

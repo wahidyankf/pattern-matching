@@ -1,9 +1,9 @@
 {
-  "name": "ayokoding-mono",
+  "name": "patternmatching-mono",
   "version": "0.1.0",
-  "description": "monorepo for ayokoding",
+  "description": "monorepo for patternmatching",
   "main": "index.js",
-  "repository": "git@github.com:wahidyankf/ayokoding.git",
+  "repository": "git@github.com:wahidyankf/patternmatching.git",
   "private": true,
   "workspaces": [
     "packages/*",

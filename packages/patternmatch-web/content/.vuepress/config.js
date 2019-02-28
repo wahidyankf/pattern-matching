@@ -35,63 +35,60 @@ module.exports = {
   },
   locales: {
     '/': {
-      lang: 'id',
-      title: 'AyoKoding!',
-      description: 'Karena semua orang bisa jadi jagoan koding.',
+      lang: 'en',
+      title: 'PatternMatching!',
+      description: 'Because it rocks!',
     },
   },
   themeConfig: {
     locales: {
       '/': {
-        label: 'Bahasa (ID)',
+        label: 'en',
         selectText: 'Languages',
         serviceWorker: {
           updatePopup: {
-            message: 'Konten baru tersedia.',
-            buttonText: 'Muat ulang',
+            message: 'New content available',
+            buttonText: 'refresh',
           },
         },
-        nav: [
-          {text: 'Teka-Teki Koding', link: '/id/puzzles/coding/'},
-          // {text: 'Tentang', link: '/id/about/'},
-        ],
+        nav: [{text: 'OCaml', link: '/en/ocaml/'}],
         sidebar: {
-          '/id/puzzles/coding/': [
-            ['/id/puzzles/coding/', 'Intro'],
-            ['/id/puzzles/coding/toc', 'Daftar Isi'],
+          '/en/ocaml/': [
+            ['/en/ocaml/01-introduction/', '01 - Introduction'],
+            ['/en/ocaml/02-basic-ocaml-fu/', '02 - Basic OCaml-fu'],
             {
-              title: '⭐',
-              collapsable: false,
+              title: 'Appendix',
+              collapsable: true,
               children: [
-                ['/id/puzzles/coding/1-star/reverse-string', 'Reverse String'],
-                ['/id/puzzles/coding/1-star/palindrome', 'Palindrome'],
                 [
-                  '/id/puzzles/coding/1-star/reverse-integer',
-                  'Reverse Integer',
+                  '/en/ocaml/appendix/up-and-running',
+                  'Appendix A - Up and Running',
                 ],
                 [
-                  '/id/puzzles/coding/1-star/maximum-character',
-                  'Maximum Character',
+                  '/en/ocaml/appendix/text-editor-integration',
+                  'Appendix B - Up and Running',
                 ],
-                ['/id/puzzles/coding/1-star/fizzbuzz', 'fizzbuzz'],
+                ['/en/ocaml/appendix/resources', 'Appendix C - OResources'],
               ],
             },
+          ],
+          '/en/reasonml/': [
+            ['/en/reasonml/01-introduction/', '01 - Introduction'],
+            ['/en/reasonml/02-basic-re-fu/', '02 - Basic Re-fu'],
             {
-              title: '⭐⭐',
-              collapsable: false,
+              title: 'Appendix',
+              collapsable: true,
               children: [
-                ['/id/puzzles/coding/2-star/array-chunking', 'Array Chunking'],
                 [
-                  '/id/puzzles/coding/2-star/sentence-capitalization',
-                  'Sentence Capitalization',
+                  '/en/reasonml/appendix/up-and-running',
+                  'Appendix A - Up and Running',
                 ],
-                ['/id/puzzles/coding/2-star/steps', 'Steps'],
+                [
+                  '/en/reasonml/appendix/text-editor-integration',
+                  'Appendix B - Up and Running',
+                ],
+                ['/en/reasonml/appendix/resources', 'Appendix C - OResources'],
               ],
-            },
-            {
-              title: '⭐⭐⭐',
-              collapsable: false,
-              children: [['/id/puzzles/coding/3-star/anagram', 'Anagram']],
             },
           ],
         },

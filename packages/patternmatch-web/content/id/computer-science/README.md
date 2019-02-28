@@ -1,1 +1,0 @@
-# Ilmu Komputer - Intro

@@ -1,22 +1,16 @@
 ---
 home: true
 heroImage: /icons/android-icon-96x96.png
-footer: Copyright © 2018-sekarang AyoKoding!
+footer: Copyright © 2019-now PatternMatching.rocks
 ---
 
 <div class="features">
   <div class="feature">
-    <h2><a href="/id/puzzles/coding/">Teka-Teki Koding</a></h2>
-    <p>Mantepin kemampuan koding lo di sini!</p>
+    <h2><a href="/en/ocaml/">OCaml</a></h2>
+    <p>Learn OCaml, one of the best programming language in the world!</p>
   </div>
-  <!-- <div class="feature">
-    <h2><a href="/id/about/">Tentang</a></h2>
-    <p>Kenalan lebih jauh sama AyoKoding!</p>
-  </div> -->
-  <!-- <div class="feature">
-    <h2>Ilmu Komputer</h2>
-    <p>
-    <Badge text="Segera Hadir" type="tips"/>
-    </p>
-  </div> -->
+  <div class="feature">
+    <h2><a href="/en/reasonml/">ReasonML</a></h2>
+    <p>Bring the power of OCaml to the web!</p>
+  </div>
 </div>
