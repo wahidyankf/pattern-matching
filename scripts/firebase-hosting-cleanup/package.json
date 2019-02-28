@@ -1,7 +1,9 @@
 {
+  "name": "firebase-hosting-cleanup",
+  "version": "0.1.0",
   "scripts": {
-    "clean": "rm -rf node_modules",
-    "reset": "yarn clean && yarn install"
+    "clean:packages": "rm -rf node_modules",
+    "clean": "yarn clean:packages"
   },
   "dependencies": {
     "firebase-tools": "^6.1.1"

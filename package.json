@@ -4,31 +4,27 @@
   "description": "monorepo for ayokoding",
   "main": "index.js",
   "repository": "git@github.com:wahidyankf/ayokoding.git",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "scripts/*"
+  ],
   "scripts": {
     "commit:auto": "git add --all && git commit -m \"update $(date +\"%D %T\")\" && git push origin master",
-    "init:patternmatch-web": "cd packages/patternmatch-web && yarn init:package",
-    "init:codes": "cd packages/codes && yarn init:package",
-    "init:top": "yarn install",
-    "init:scripts": "cd scripts && yarn init:scripts",
-    "init:repo": "yarn init:top && yarn init:scripts && yarn init:patternmatch-web && yarn init:codes",
-    "clean:patternmatch-web": "cd packages/patternmatch-web && yarn clean:package",
-    "clean:codes": "cd packages/codes && yarn clean:package",
-    "clean:top": "rm -rf node_modules",
-    "clean:scripts": "cd scripts && yarn clean:scripts",
-    "clean:repo": "yarn clean:top && yarn clean:scripts && yarn clean:patternmatch-web && yarn clean:codes",
-    "reset:patternmatch-web": "yarn clean:patternmatch-web && yarn init:patternmatch-web",
-    "reset:codes": "yarn clean:codes && yarn init:codes",
-    "reset:top": "yarn clean:top && yarn init:top",
-    "reset:scripts": "cd scripts && yarn reset:scripts",
-    "reset:repo": "yarn clean:repo && yarn init:repo",
-    "dev:patternmatch-web": "cd packages/patternmatch-web && yarn dev",
+    "build:all": "npx oao run-script build --tree",
+    "clean:build": "npx oao run-script clean:build --parallel", 
+    "clean:packages": "npx oao run-script clean:packages --parallel", 
+    "clean": "npx oao run-script clean --parallel",
+    "init:repo": "yarn ; npx oao run-script build",
+    "clean:init:repo": "yarn clean ; yarn init:repo",
+    "patternmatch-web": "cd packages/patternmatch-web && yarn develop",
     "build:patternmatch-web": "cd packages/patternmatch-web && yarn build",
-    "build:all": "yarn build:patternmatch-web",
-    "deploy:patternmatch-web": "cd packages/patternmatch-web && yarn deploy",
-    "deploy:patternmatch-web:auto": "yarn deploy:patternmatch-web && yarn commit:auto",
-    "deploy:all": "yarn deploy:patternmatch-web",
-    "deploy:all:auto": "yarn deploy:patternmatch-web:auto"
+    "deploy:patternmatch-web": "cd packages/patternmatch-web ; yarn clean:build ; yarn build && yarn deploy",
+    "deploy:patternmatch-web:auto": "yarn deploy:patternmatch-web && yarn commit:auto"
   },
   "author": "wahidyankf <wahidyankf@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "oao": "^1.6.0"
+  }
 }

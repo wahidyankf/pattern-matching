@@ -1,16 +1,17 @@
 {
-  "name": "ayokoding",
+  "name": "patternmatch-web",
   "version": "0.1.0",
-  "description": "repo for ayokoding.com",
+  "description": "repo for patternmatch.rocks",
   "main": "index.js",
   "scripts": {
-    "init:package": "yarn install",
-    "clean:package": "rm -rf node_modules",
-    "reset:package": "yarn clean:package && yarn install",
-    "firebase:clean": "cd ../../scripts/firebase-hosting-cleanup && node cleanupVersions.js ayokoding-f36a3 5 commit",
-    "dev": "vuepress dev content",
-    "build": "vuepress build content",
-    "deploy": "yarn build && firebase deploy && yarn firebase:clean"
+    "clean:build": "rm -rf content/.vuepress/dist",
+    "clean:packages": "rm -rf node_modules",
+    "clean": "yarn clean:packages",
+    "build:vuepress": "vuepress build content",
+    "build": "yarn build:vuepress",
+    "deploy": "yarn build && firebase deploy && yarn firebase:clean",
+    "develop": "vuepress dev content",
+    "firebase:clean": "cd ../../scripts/firebase-hosting-cleanup && node cleanupVersions.js ayokoding-f36a3 5 commit"
   },
   "author": "wahidyankf <wahidyankf@gmail.com>",
   "license": "ISC",
