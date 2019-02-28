@@ -17,10 +17,10 @@
     "clean": "npx oao run-script clean --parallel",
     "init:repo": "yarn ; npx oao run-script build",
     "clean:init:repo": "yarn clean ; yarn init:repo",
-    "patternmatch-web": "cd packages/patternmatch-web && yarn develop",
-    "build:patternmatch-web": "cd packages/patternmatch-web && yarn build",
-    "deploy:patternmatch-web": "cd packages/patternmatch-web ; yarn clean:build ; yarn build && yarn deploy",
-    "deploy:patternmatch-web:auto": "yarn deploy:patternmatch-web && yarn commit:auto"
+    "patternmatching-web": "cd packages/patternmatching-web && yarn develop",
+    "build:patternmatching-web": "cd packages/patternmatching-web && yarn build",
+    "deploy:patternmatching-web": "cd packages/patternmatching-web ; yarn clean:build ; yarn build && yarn deploy",
+    "deploy:patternmatching-web:auto": "yarn deploy:patternmatching-web && yarn commit:auto"
   },
   "author": "wahidyankf <wahidyankf@gmail.com>",
   "license": "ISC",

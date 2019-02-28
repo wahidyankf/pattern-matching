@@ -1,7 +1,7 @@
 {
-  "name": "patternmatch-web",
+  "name": "patternmatching-web",
   "version": "0.1.0",
-  "description": "repo for patternmatch.rocks",
+  "description": "repo for patternmatching.rocks",
   "main": "index.js",
   "scripts": {
     "clean:build": "rm -rf content/.vuepress/dist",
