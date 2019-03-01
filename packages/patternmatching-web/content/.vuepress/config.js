@@ -69,7 +69,7 @@ module.exports = {
                 ],
                 [
                   '/en/ocaml/appendix/text-editor-integration',
-                  'Appendix B - Up and Running',
+                  'Appendix B - Text Editor Integration',
                 ],
                 ['/en/ocaml/appendix/resources', 'Appendix C - OResources'],
               ],
