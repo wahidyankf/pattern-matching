@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /icons/android-icon-96x96.png
-footer: "License: MIT"
+footer: 'License: MIT'
 ---
 
 <div class="features">
@@ -12,5 +12,9 @@ footer: "License: MIT"
   <div class="feature">
     <h2><a href="/en/reasonml/">ReasonML</a></h2>
     <p>Bring the power of OCaml to the web!</p>
+  </div>
+  <div class="feature">
+    <h2><a href="/en/emacs/">emacs</a></h2>
+    <p>Learn one of the most powerful text-editor that support the functional programming!</p>
   </div>
 </div>

@@ -94,6 +94,20 @@ module.exports = {
               ],
             },
           ],
+          '/en/emacs/': [
+            ['/en/emacs/01-introduction/', '01 - Introduction'],
+            {
+              title: 'Appendix',
+              collapsable: true,
+              children: [
+                [
+                  '/en/emacs/appendix/up-and-running',
+                  'Appendix A - Up and Running',
+                ],
+                ['/en/emacs/appendix/resources', 'Appendix B - Resources'],
+              ],
+            },
+          ],
         },
       },
     },
